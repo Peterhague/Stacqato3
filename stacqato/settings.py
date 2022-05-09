@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'stack',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-peterhague-stacqato3-d8txple8d0c.ws-eu44.gitpod.io']
